@@ -1,0 +1,53 @@
+import React from "react";
+import "./portfolio.css";
+export function Portfolio(props) {
+    return (React.createElement(React.Fragment, null,
+        React.createElement(React.Fragment, null,
+            React.createElement("header", { className: "profile container" },
+                React.createElement("div", { className: "profile_container grid" },
+                    React.createElement("div", { className: "profile_data" },
+                        React.createElement("div", { className: "profile_border" },
+                            React.createElement("div", { className: "my_profile" },
+                                React.createElement("img", { src: props.profileImage ||
+                                        "https://www.pngitem.com/pimgs/m/579-5791541_beard-boy-logo-png-download-beard-logo-hd.png", alt: "Profile Picture" }))),
+                        React.createElement("h2", { className: "profile_name" }, props.profileName || "Dimas Yusuf Qurohman"),
+                        React.createElement("h3", { className: "profile_profession" }, props.professiomName || "Front-End Developer"),
+                        React.createElement("ul", { className: "profile_social" },
+                            React.createElement("a", { href: props.instaDetails || "https://www.instagram.com/", target: "_blank", className: "profile_social_link" },
+                                React.createElement("i", { className: "ri-instagram-line" })),
+                            React.createElement("a", { href: props.linkedinDetails || "https://www.linkedin.com/", target: "_blank", className: "profile_social_link" },
+                                React.createElement("i", { className: "ri-linkedin-box-line" })),
+                            React.createElement("a", { href: props.githubDetails || "https://github.com/", target: "_blank", className: "profile_social_link" },
+                                React.createElement("i", { className: "ri-github-line" })))),
+                    React.createElement("div", { className: "profile_info grid" }, props.portfolioArray &&
+                        props.portfolioArray.map((element, index) => (React.createElement("div", { key: index, className: "profile_info_group" },
+                            React.createElement("h3", { className: "profile_info_number" }, element.infoNumber || "6"),
+                            React.createElement("p", { className: "profile_info_description" }, element.infoText || " Months of work"))))),
+                    React.createElement("div", { className: "profile_buttons" },
+                        React.createElement("a", { href: props.cv || "/demo.pdf", download: "", className: "button" },
+                            "Download CV ",
+                            React.createElement("i", { className: "ri-download-line" })),
+                        React.createElement("div", { className: "profile_buttons_small" },
+                            React.createElement("a", { href: props.whatsappInfo ||
+                                    "https://api.whatsapp.com/send/?phone=9999999999&text=Hello, i want to make a website!", target: "_blank", className: "button button_small button_gray" },
+                                React.createElement("i", { className: "ri-whatsapp-line" })),
+                            React.createElement("a", { href: props.emailInfo || "mailto: sourcesoftsolutions@gmail.com", target: "_blank", className: "button button_small button_gray" },
+                                React.createElement("i", { className: "ri-mail-line" })))))),
+            React.createElement("main", { className: "main" },
+                React.createElement("section", { className: "filters container" },
+                    React.createElement("ul", { className: "filters_content" },
+                        React.createElement("button", { className: "filters_button" }, "Skills")),
+                    React.createElement("div", { className: "filters_sections" },
+                        React.createElement("div", { className: "skills_content grid" }, props.skillsArray &&
+                            props.skillsArray.map((element, index) => (React.createElement("div", { key: index, className: "skills_area" },
+                                React.createElement("h3", { className: "skills_title" }, element.skillsTitle || "Front-end Developer"),
+                                React.createElement("div", { className: "skills_box" },
+                                    React.createElement("div", { className: "skills_group" },
+                                        React.createElement("div", { className: "skills_data" },
+                                            React.createElement("i", { className: "ri-checkbox-circle-line" }),
+                                            React.createElement("div", null,
+                                                React.createElement("h3", { className: "skills_name" }, element.skillsName || "HTML"),
+                                                React.createElement("span", { className: "skills_level" }, element.skillsLevel || "Intermediate")))))))))))),
+            React.createElement("footer", { className: "footer container" },
+                React.createElement("span", { className: "footer_copy" }, props.footercredits || "©Himanshu. All rights reserved")))));
+}

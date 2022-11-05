@@ -1,0 +1,33 @@
+{
+  "name": "footer-project-ss",
+  "version": "1.0.1",
+  "description": "Footer Package for Ecommerce Project",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf rimraf dist",
+    "build": "yarn clean && tsc && yarn copy-files && cp package.json README.md ./dist",
+    "start": "react-scripts start",
+    "copy-files": "copyfiles -u 1 src/**/*.html src/**/*.css dist/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^18.0.15",
+    "copyfiles": "^2.4.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.10.0",
+    "@hookform/resolvers": "^2.9.6",
+    "bootstrap": "^5.0.2",
+    "react-script": "^2.0.5",
+    "yarn": "^1.22.19"
+  },
+  "resolutions": {
+    "styled-components": "^5"
+  }
+}

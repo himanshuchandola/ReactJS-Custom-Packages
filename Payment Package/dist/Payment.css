@@ -1,0 +1,260 @@
+/*-- Default --*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css");
+
+body,
+html {
+  margin: 0 !important;
+  padding: 0;
+  color: #000;
+  background: #fff;
+  height: 100%;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-size: 16px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: 0;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+aside,
+details,
+figcaption,
+figure,
+ins,
+summary,
+mark,
+title,
+video,
+footer,
+header,
+hgroup,
+nav,
+section,
+article {
+  display: block;
+  margin: 0;
+}
+.clear {
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  width: 100%;
+  display: block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+}
+p:last-child,
+p:last-of-type,
+p:only-child {
+  margin-bottom: 0;
+}
+/* >>> detail*/
+.productright h3 {
+  font-size: 24px;
+  line-height: 36px;
+  color: #171a1fff;
+}
+.sellerinfo {
+  margin-top: 20px;
+}
+.sellerinfo label {
+  font-size: 14px;
+  line-height: 22px;
+  color: #9095a0ff;
+}
+.sellerinfo a {
+  color: #139cffff;
+}
+.price-title {
+  font-family: Poppins;
+  font-size: 32px;
+  line-height: 48px;
+  color: #171a1fff;
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+.price-title span {
+  font-size: 14px;
+  line-height: 22px;
+  color: #9095a0ff;
+}
+.productright p {
+  font-size: 14px;
+  line-height: 22px;
+  color: #171a1fff;
+}
+.productright .button-primary {
+  padding: 5px 20px;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 26px;
+}
+.productreview {
+  padding: 30px 0;
+}
+.productreview .nav {
+  border-bottom: 1px solid #f3f4f6ff;
+  margin-bottom: 20px;
+}
+.productreview .nav-item a {
+  align-items: center;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 15px 35.875px;
+  color: #565e6cff;
+  cursor: pointer;
+  white-space: nowrap;
+  position: relative;
+}
+.productreview .nav-item a.active {
+  font-weight: bold;
+  color: #139cffff;
+}
+.productreview .nav-item a.active:after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 4px;
+  background: #4bb4ffff;
+  border-radius: 2px 2px 0px 0px;
+}
+.productreview .tab-pane {
+  font-size: 14px;
+  line-height: 22px;
+  color: #171a1fff;
+}
+/* >>> payments method*/
+.stepno {
+  font-size: 14px;
+  line-height: 28px;
+  color: #9095a0ff;
+  margin: 0 18px;
+}
+.stepno + i {
+  color: #9095a0;
+  font-size: 16px;
+}
+.stepno span {
+  border-radius: 14px;
+  border: 1px solid #9095a0ff;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.stepno.active {
+  color: #139cffff;
+}
+.stepno.active span {
+  background: #139cffff;
+  border-color: #139cffff;
+  color: #ffffffff;
+}
+
+.payment-sumry h3 {
+  font-size: 16px;
+  line-height: 26px;
+  color: #171a1fff;
+}
+.payment-sumry label {
+  font-size: 12px;
+  line-height: 20px;
+  padding: 4px 7px;
+  border-radius: 14px;
+  color: #ffffffff;
+  background: #139cffff;
+}
+.payment-subtotal,
+.payment-total {
+  font-size: 12px;
+  line-height: 20px;
+  color: #171a1fff;
+}
+.payment-total {
+  border-top: 1px solid #dee1e6ff;
+  padding-top: 10px;
+  margin-top: 15px;
+}
+.payment-subtotal label,
+.payment-total label {
+  font-size: 15px;
+  line-height: 24px;
+  color: #171a1fff;
+  text-align: right;
+}
+.payment-subtotal label span,
+.payment-total label span {
+  font-size: 14px;
+  line-height: 22px;
+  color: #9095a0ff;
+  margin-top: 5px;
+}
+.payment-form .button-primary {
+  padding: 11px 12px;
+  background: #139cffff;
+  color: #fff;
+}
+
+@media only screen and (max-width: 1024px) {
+  .heading-title {
+    font-size: 42px;
+    line-height: 1.3;
+    padding-bottom: 15px;
+  }
+  .filter-menu a {
+    font-size: 13px;
+    line-height: 1.2px;
+    padding: 10px 8px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .heading-title {
+    font-size: 36px;
+  }
+}
+@media only screen and (max-width: 670px) {
+  .heading-title {
+    font-size: 32px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .heading-title {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 490px) {
+  .heading-title {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,29 @@
+Documentation for Creating NPM packages
+
+1. We need to install Packages "babel" and "webpack" if not available on typescript template
+
+2. Install npm add -D typescript react react-dom @types/react
+
+3. need to install and put this on package file as explained on this site:
+  
+  - https://errorsfixing.com/how-to-include-a-css-file-in-react-and-typescript-npm-package/
+
+4. Create 3 files in src folder
+
+  > main.tsx file 
+  > css file 
+  > index.ts file (here we will export our main.tsx file )
+  
+5. Write your code for component and add CSS for that component.
+
+6. npm run build 
+   - for bundling for all files, it will create dist folder which is our final folder going to be pushed as package
+   
+7. npm login 
+   - for login into npmjs site
+   
+   it will ask your npmjs login credentials 
+   
+8. npm publish ./dist
+
+  - here we are publishing our dist folder to site

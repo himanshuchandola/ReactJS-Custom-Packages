@@ -1,0 +1,122 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css");
+
+body,
+html,
+p {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Open Sans", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: none;
+}
+aside,
+details,
+figcaption,
+figure,
+ins,
+summary,
+small,
+mark,
+title,
+video,
+footer,
+header,
+hgroup,
+nav,
+section,
+article {
+  display: block;
+}
+.clear {
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  width: 100%;
+  display: block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+body * {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+ul,
+ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+input,
+button {
+  outline: none;
+  border: none;
+}
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+button {
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+:focus {
+  outline: none;
+}
+img {
+  border: none;
+}
+.privacy .pList {
+  padding: 0px;
+}
+.privacy {
+  padding: 20px 0;
+}
+.privacy p {
+  color: #686868;
+  margin-bottom: 20px;
+  line-height: 24px;
+}
+.privacy h2 {
+  color: #cc3f3f;
+  font-size: 25px;
+  font-family: 'Conv_calibri_5';
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-bottom: 20px;
+  text-align: center;
+}
